@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SameerAI Calc — Dark Edition</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+  <div id="loader" class="loader">
+    <div class="glow-s">S</div>
+  </div>
+
+  <div class="app" id="app" style="display:none;">
+    <header>
+      <h1>SameerAI Calc</h1>
+      <p class="tag">Sameer Singar | Mathematics Design System</p>
+    </header>
+
+    <main>
+      <section class="input-area">
+        <textarea id="lines" placeholder="Enter your calculations..."></textarea>
+        <div class="controls">
+          <button id="calcBtn">Calculate</button>
+          <button id="clearBtn">Clear</button>
+          <button id="exportBtn">Export PDF</button>
+          <button id="csvBtn">Export CSV</button>
+        </div>
+      </section>
+
+      <section class="output-area">
+        <h2>Results</h2>
+        <div id="results"></div>
+        <div class="final-total">Final Total: <span id="finalTotal">0</span></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Sameer Singar | Mathematics Design System</p>
+    </footer>
+  </div>
+
+  <audio id="clickSound" src="https://assets.mixkit.co/active_storage/sfx/1113/1113-preview.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
